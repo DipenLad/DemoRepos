@@ -12,6 +12,7 @@
 
 @property (nonatomic,retain) IBOutlet UIView *viewScanner;
 @property (nonatomic,retain) IBOutlet UIView *masterView;
+@property (nonatomic,retain) IBOutlet UIView *v2View;
 
 
 @end
