@@ -12,7 +12,7 @@
 
 @property (nonatomic,retain) IBOutlet UIView *viewScanner;
 @property (nonatomic,retain) IBOutlet UIView *masterView;
-@property (nonatomic,retain) IBOutlet UIView *v2View;
+@property (nonatomic,retain) IBOutlet UIView *v2View; // WORLING OF VERSION 2.0 IN IN PROGRESS
 
 
 @end
