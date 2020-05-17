@@ -15,7 +15,31 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    MTBBarcodeScanner *scanner = [[MTBBarcodeScanner alloc] initWithPreviewView:self.viewScanner];
+    
+    [MTBBarcodeScanner requestCameraPermissionWithSuccess:^(BOOL success) {
+        if (success) {
+            
+            NSError *error = nil;
+            [scanner startScanningWithResultBlock:^(NSArray *codes) {
+                AVMetadataMachineReadableCodeObject *code = [codes firstObject];
+                NSLog(@"Found code: %@", code.stringValue);
+                
+                [scanner stopScanning];
+            } error:&error];
+            
+        } else {
+            // The user denied access to the camera
+        }
+    }];
+    
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidLoadCOPY {
     [super viewDidLoad];
     MTBBarcodeScanner *scanner = [[MTBBarcodeScanner alloc] initWithPreviewView:self.viewScanner];
     
