@@ -15,6 +15,7 @@
 @property (nonatomic,retain) IBOutlet UIView *masterView; //FIXED SOME ERROR IN 1.1 AND RELEASED CODE
 @property (nonatomic,retain) IBOutlet UIView *v1_1View;
 @property (nonatomic,retain) IBOutlet UIView *v2View; // WORLING OF VERSION 2.0 IN IN PROGRESS
+@property (nonatomic,retain) IBOutlet UIView *v22View;
 
 
 
