@@ -11,7 +11,8 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic,retain) IBOutlet UIView *viewScanner;
-@property (nonatomic,retain) IBOutlet UIView *masterView;
+@property (nonatomic,retain) IBOutlet UIView *masterView; //FIXED SOME ERROR IN 1.1 AND RELEASED CODE
+@property (nonatomic,retain) IBOutlet UIView *v1_1View;
 
 
 @end
